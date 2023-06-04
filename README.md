@@ -32,6 +32,8 @@
 
 `exit`
 
+`cd airflow/`
+
 `sed -i 's#sqlite:////home/ubuntu/airflow/airflow.db#postgresql+psycopg2://airflow:airflow@localhost/airflow#g' airflow.cfg`
 
 `sed -i 's#SequentialExecutor#LocalExecutor#g' airflow.cfg`
