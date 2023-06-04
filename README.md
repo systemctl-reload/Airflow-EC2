@@ -23,8 +23,14 @@
 **psql**
 
 `CREATE DATABASE airflow;`
+
 `CREATE USER airflow WITH PASSWORD 'airflow';`
+
 `GRANT ALL PRIVILEGES ON DATABASE airflow TO airflow;`
+
+`exit`
+
+`exit`
 
 `sed -i 's#sqlite:////home/ubuntu/airflow/airflow.db#postgresql+psycopg2://airflow:airflow@localhost/airflow#g' airflow.cfg`
 
